@@ -24,6 +24,7 @@ GEO_NAMES_NORMALIZED = {unidecode(n).lower(): n for n in GEO_NAMES}  # mapa norm
 # 2) App (layout)
 # ----------------------------
 app = Dash(__name__)
+server = app.server
 app.title = "CREA-SC | Eleição 2022"
 
 def kpi_card(title, id_value):
